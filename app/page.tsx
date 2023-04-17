@@ -54,13 +54,13 @@ export default function Home() {
         <SkillList />
         <div className="w-full h-fit flex flex-row">
           <a href="https://wa.link/5eialg" target="_blank" rel="noopener noreferrer">
-            <button className="rounded-sm ml-1 mr-10 h-10 w-36 border-2 border-stone-950 flex items-center justify-center hover:bg-black hover:text-white dark:border-white hover:dark:bg-white text-xs font-popL hover:dark:text-black">
+            <button className="rounded-md ml-1 mr-10 h-10 w-36 border-2 border-stone-950 flex items-center justify-center hover:bg-black hover:text-white dark:border-white hover:dark:bg-white text-xs font-popL hover:dark:text-black">
               Let's have a chat
               <PaperPlaneIcon className="ml-2" />
             </button>
           </a>
           <a href="https://github.com/313devs" target="_blank" rel="noopener noreferrer">
-            <button className="rounded-sm ml-1 h-10 w-36 border-2 border-stone-950 flex items-center justify-center hover:bg-black hover:text-white dark:border-white hover:dark:bg-white text-xs font-popL hover:dark:text-black">
+            <button className="rounded-md ml-1 h-10 w-36 border-2 border-stone-950 flex items-center justify-center hover:bg-black hover:text-white dark:border-white hover:dark:bg-white text-xs font-popL hover:dark:text-black">
               Github
               <GitHubLogoIcon className="ml-2" />
             </button>
