@@ -1,9 +1,10 @@
 import Link from 'next/link';
 import React from 'react'
+import { GitHubLogoIcon, CodeIcon } from '@radix-ui/react-icons';
 
 export default function about() {
   return (
-    <div className="flex flex-col w-full h-fit px-5 md:h-fill md:mt-1">
+    <div className="flex flex-col w-full h-fit px-5 md:h-fill md:mt-1 md:ml-5">
       <div className={"w-full h-12 mb-2  2xl:h-24"}>
         <h1 className="text-5xl 2xl:text-8xl font-sac">about</h1>
       </div>
@@ -20,7 +21,7 @@ export default function about() {
         and <span className="font-popM">Japan Robocup2017</span> in which we
         gained different awards.
       </p>
-      <h1 className="text-sm font-popL bg-neutral-800 w-fit h-fit rounded-lg py-2 px-4 mb-5">
+      <h1 className="text-sm font-popL hover:cursor-none hover:bg-neutral-200 bg-neutral-100 hover:dark:bg-neutral-900 dark:bg-neutral-800 w-fit h-fit rounded-lg py-2 px-4 mb-5">
         2016 - 2018
       </h1>
       <p className="mb-5 font-popL">
@@ -30,10 +31,9 @@ export default function about() {
         the apple Appstore and it was live for
         <span className="font-popM"> 1 year </span>.
       </p>
-      <h1 className="text-sm font-popL bg-neutral-800 w-fit h-fit rounded-lg py-2 px-4 mb-5">
+      <h1 className="text-sm font-popL hover:cursor-none hover:bg-neutral-200 bg-neutral-100 hover:dark:bg-neutral-900 dark:bg-neutral-800 w-fit h-fit rounded-lg py-2 px-4 mb-5">
         2017 - 2018
       </h1>
-
       <p className="mb-5 font-popL">
         In july of<span className="font-popM"> 2018 </span> I got a scholarship
         from
@@ -45,7 +45,7 @@ export default function about() {
         <span className="font-popM"> ARKit </span> and
         <span className="font-popM"> SpriteKit </span>.
       </p>
-      <h1 className="text-sm font-popL bg-neutral-800 w-fit h-fit rounded-lg py-2 px-4 mb-5">
+      <h1 className="text-sm font-popL hover:cursor-none hover:bg-neutral-200 bg-neutral-100 hover:dark:bg-neutral-900 dark:bg-neutral-800 w-fit h-fit rounded-lg py-2 px-4 mb-5">
         2018
       </h1>
       <p className="mb-5 font-popL">
@@ -57,7 +57,7 @@ export default function about() {
         for connection to different crypto exchanges such as
         <span className="font-popM"> Binance </span>,
         <span className="font-popM"> Coinex </span> and
-        <span className="font-popM"> Houbi </span>.<br />
+        <span className="font-popM"> Houbi</span>.<br />
         We also used <span className="font-popM">AI </span> and{" "}
         <span className="font-popM"> Tensorflow </span>
         inorder to predict patterns in different charts to make the best
@@ -68,14 +68,35 @@ export default function about() {
         <span className="font-popM"> Python </span> specifically the{" "}
         <span className="font-popM"> Flask </span> framework for dealing with
         data and analysing them with{" "}
-        <span className="font-popM"> Tensorflow </span>.
+        <span className="font-popM"> Tensorflow</span>.
       </p>
-      <h1 className="text-sm font-popL bg-neutral-800 w-fit h-fit rounded-lg py-2 px-4 mb-5">
-        2019-2022
+      <h1 className="text-sm font-popL hover:cursor-none hover:bg-neutral-200 bg-neutral-100 hover:dark:bg-neutral-900 dark:bg-neutral-800 w-fit h-fit rounded-lg py-2 px-4 mb-5">
+        2019 - 2022
       </h1>
-
-      <h1 className='font-popL'>Get to know more about me by visiting my 
-      <a href='https://github.com/313devs' className='font-popM hover:bg-neutral-800 hover:rounded-lg hover:px-4 hover:py-2 hover:mx-2'> Github </a> or the <Link href='/projects' className='font-popM hover:bg-neutral-800 hover:rounded-lg hover:px-4 hover:py-2 hover:mx-2'> Projects </Link> page</h1>
+      <hr />
+      <div className='flex w-full h-fit justify-between pt-5'>
+      <GitHubLogoIcon/>
+      <CodeIcon/>
+      </div>
+      <h1 className="font-popL my-4">
+        Get to know more about me by visiting my
+        <Link
+          href="https://github.com/313devs"
+          className="font-popM hover:bg-neutral-100 hover:dark:bg-neutral-800 hover:rounded-lg hover:px-4 hover:py-2 hover:mx-2"
+        >
+          {" "}
+          Github{" "}
+        </Link>{" "}
+        or the{" "}
+        <Link
+          href="projects"
+          className="font-popM hover:bg-neutral-100 hover:dark:bg-neutral-800 hover:rounded-lg hover:px-4 hover:py-2 hover:mx-2"
+        >
+          {" "}
+          Projects
+        </Link>{" "}
+        page.
+      </h1>
     </div>
   );
 }
