@@ -8,7 +8,7 @@ import { motion } from 'framer-motion';
 
 export default function Home() {
   return (
-    <div className="flex flex-col w-full h-fit px-5 md:h-fill md:mt-1">
+    <div className="flex flex-col w-full md:w-5/6 h-fit px-5 md:h-fill md:mt-1 md:ml-5">
       <div className={"w-full h-12 mb-2  2xl:h-24"}>
         <motion.h1
           initial={{
@@ -78,8 +78,8 @@ export default function Home() {
             rel="noopener noreferrer"
           >
             <button className="rounded-lg h-10 w-fit px-4 py-6 hover:bg-neutral-100 hover:dark:bg-neutral-800 flex items-center justify-center md:text-sm text-lg font-popL hover:dark:text-white border-2  border-neutral-100 dark:border-neutral-800">
+              <LinkedInLogoIcon className="mr-2" />
               Linkedin
-              <LinkedInLogoIcon className="ml-2" />
             </button>
           </a>
           <a
@@ -88,8 +88,8 @@ export default function Home() {
             rel="noopener noreferrer"
           >
             <button className="rounded-lg h-10 w-fit px-4 py-6 ml-4 hover:bg-neutral-100 hover:dark:bg-neutral-800 flex items-center justify-center md:text-sm text-lg font-popL hover:dark:text-white border-2 border-neutral-100 dark:border-neutral-800">
+              <GitHubLogoIcon className="mr-2" />
               Github
-              <GitHubLogoIcon className="ml-2" />
             </button>
           </a>
         </div>
