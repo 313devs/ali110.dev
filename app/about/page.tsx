@@ -8,14 +8,14 @@ export default function about() {
       <div className={"w-full h-12 mb-2  2xl:h-24"}>
         <h1 className="text-5xl 2xl:text-8xl font-sac">about me</h1>
       </div>
-      <h1 className="text-base font-popM mt-4">Hey, I'm Ali...</h1>
+      <h1 className="text-base font-popM mt-4">Hey, I&apos;m Ali...</h1>
       <p className="mb-5 font-popL">
         I have been programming since I was{" "}
         <span className="font-popM">13</span>. I started with{" "}
         <span className="font-popM">C++</span> then moved to{" "}
         <span className="font-popM">C# </span>
         and finally started programming in <span className="font-popM">C</span>.
-        I used these programming languages for school's
+        I used these programming languages for school&apos;s
         <span className="font-popM"> robotic</span> competitions. <br /> Me and
         my team went to <span className="font-popM">Germany Robocup2016</span>{" "}
         and <span className="font-popM">Japan Robocup2017</span> in which we
@@ -74,7 +74,7 @@ export default function about() {
         2019 - 2022
       </h1>
       <p className="mb-5 font-popL">
-        I have been focusing a lot more on backend in the past few years and my focus has been on <span className="font-popM">Rest API's</span> and 
+        I have been focusing a lot more on backend in the past few years and my focus has been on <span className="font-popM">Rest API&apos;s</span> and 
         mastering working with <span className="font-popM">microservices</span> and for that reason I have been using different up to date industry 
         languages and frameworks such as <span className="font-popM"> Node.js </span>, <span className="font-popM"> Flask </span> and <span className="font-popM"> Golang </span>.
       </p>
