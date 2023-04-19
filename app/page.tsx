@@ -56,7 +56,7 @@ export default function Home() {
             <IdCardIcon className="text-black dark:text-white text-opacity-70" />
             <h1 className="md:text-sm text-base font-popL ml-2 text-black 2xl:text-4xl  dark:text-white text-opacity-70">
               Currently at{" "}
-              <span className="font-popM">Kings college London</span>
+              <span className="font-popM">KCL</span>
             </h1>
           </div>
         </div>

@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 export default function Pending() {
   return (
-    <div className="flex flex-col w-full h-96 justify-center items-center">
+    <div className="flex flex-col w-screen md:w-full h-96 justify-center items-center">
       <motion.div
         initial={{
           opacity: 0,
