@@ -6,7 +6,7 @@ export default function about() {
   return (
     <div className="flex flex-col w-full h-fit px-5 md:h-fill md:mt-1 md:ml-5">
       <div className={"w-full h-12 mb-2  2xl:h-24"}>
-        <h1 className="text-5xl 2xl:text-8xl font-sac">about</h1>
+        <h1 className="text-5xl 2xl:text-8xl font-sac">about me</h1>
       </div>
       <h1 className="text-base font-popM mt-4">Hey, I'm Ali...</h1>
       <p className="mb-5 font-popL">
@@ -38,7 +38,7 @@ export default function about() {
         In july of<span className="font-popM"> 2018 </span> I got a scholarship
         from
         <span className="font-popM"> Apple </span> to attend the
-        <span className="font-popM"> WWDC18 developers confrence</span> the
+        <span className="font-popM"> WWDC18 </span> developers confrence. the
         languages and frameworks I used for this challenge were{" "}
         <span className="font-popM"> Swift </span> ,
         <span className="font-popM"> UIKit </span> ,
@@ -72,6 +72,14 @@ export default function about() {
       </p>
       <h1 className="text-sm font-popL hover:cursor-none hover:bg-neutral-200 bg-neutral-100 hover:dark:bg-neutral-900 dark:bg-neutral-800 w-fit h-fit rounded-lg py-2 px-4 mb-5">
         2019 - 2022
+      </h1>
+      <p className="mb-5 font-popL">
+        I have been focusing a lot more on backend in the past few years and my focus has been on <span className="font-popM">Rest API's</span> and 
+        mastering working with <span className="font-popM">microservices</span> and for that reason I have been using different up to date industry 
+        languages and frameworks such as <span className="font-popM"> Node.js </span>, <span className="font-popM"> Flask </span> and <span className="font-popM"> Golang </span>.
+      </p>
+      <h1 className="text-sm font-popL hover:cursor-none hover:bg-neutral-200 bg-neutral-100 hover:dark:bg-neutral-900 dark:bg-neutral-800 w-fit h-fit rounded-lg py-2 px-4 mb-5">
+        2020 - Now
       </h1>
       <hr />
       <div className='flex w-full h-fit justify-between pt-5'>

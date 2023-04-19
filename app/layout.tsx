@@ -14,11 +14,11 @@ const sacramento = Sacramento({
   variable:"--font-sac" 
 })
 const poppinsLight = Poppins({
-  weight: '200',
-  style: 'normal',
-  subsets : ["latin"],
-  variable:"--font-pop-light"
-})
+  weight: "200",
+  style: "normal",
+  subsets: ["latin"],
+  variable: "--font-pop-light",
+});
 
 const poppinsMedium = Poppins({
 weight: '500',
@@ -42,7 +42,7 @@ export default function RootLayout({
         className={`max-w-4xl mb-40 flex flex-col md:flex-row mx-4 mt-8 md:mt-20 lg:mt-32 lg:mx-auto bg-transparent ${fontClasses}`}
       >
         <Navbar />
-        <main className="min-w-0 md:mt-0 flex flex-col px-2 md:px-0 h-fit bg-white dark:bg-[#111010]">
+        <main className="min-w-0 md:mt-0 flex flex-col px-2 md:px-0 h-full w-full bg-white dark:bg-[#111010]">
           {children}
         </main>
       </body>

@@ -6,14 +6,17 @@ import Link from 'next/link';
 import { motion, LayoutGroup } from 'framer-motion';
 
 const navItems = {
-  '/': {
-    name: 'Home',
+  "/": {
+    name: "Home",
   },
-  '/about': {
-    name: 'About',
+  "/about": {
+    name: "About",
   },
-  '/projects': {
-    name: 'Projects',
+  "/projects": {
+    name: "Projects",
+  },
+  "/resume": {
+    name: "Resume'",
   },
 };
 
