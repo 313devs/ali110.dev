@@ -75,7 +75,7 @@ export default function NavBar() {
                     key={path}
                     href={path}
                     className={clsx(
-                      "transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle text-xl md:text-base",
+                      "transition-all hover:text-neutral-800 dark:hover:text-neutral-200 flex align-middle text-sm md:text-base",
                       {
                         "text-neutral-500": !isActive,
                         "font-popL": !isActive,

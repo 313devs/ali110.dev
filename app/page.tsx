@@ -8,7 +8,7 @@ import { motion } from 'framer-motion';
 
 export default function Home() {
   return (
-    <div className="flex flex-col w-full md:w-5/6 h-fit px-5 md:h-fill md:mt-1 md:ml-5">
+    <div className="flex flex-col md:w-5/6 h-fit px-5 md:h-full md:mt-1 md:ml-5">
       <div className={"w-full h-12 mb-2  2xl:h-24"}>
         <motion.h1
           initial={{
@@ -40,34 +40,34 @@ export default function Home() {
         <div className="flex flex-col justify-between mb-2 w-fit h-28 px-1 2xl:w-fit 2xl:h-64">
           <div className="w-full h-1/3 flex items-center">
             <MixIcon className="text-black dark:text-white text-opacity-70" />
-            <h1 className="md:text-sm text-base font-popL ml-2 text-black 2xl:text-4xl  dark:text-white text-opacity-70">
+            <h1 className="text-sm font-popL ml-2 text-black 2xl:text-4xl  dark:text-white text-opacity-70">
               {" "}
               <span className="font-popM">20</span> y.o
             </h1>
           </div>
           <div className="w-full h-1/3 flex items-center">
             <RocketIcon className="text-black dark:text-white text-opacity-70" />
-            <h1 className="md:text-sm text-base font-popL ml-2 text-black 2xl:text-4xl  dark:text-white text-opacity-70">
+            <h1 className="text-sm font-popL ml-2 text-black 2xl:text-4xl  dark:text-white text-opacity-70">
               {" "}
               <span className="font-popM">7</span> years of experience
             </h1>
           </div>
           <div className="w-full h-1/3  flex items-center">
             <IdCardIcon className="text-black dark:text-white text-opacity-70" />
-            <h1 className="md:text-sm text-base font-popL ml-2 text-black 2xl:text-4xl  dark:text-white text-opacity-70">
+            <h1 className="text-sm font-popL ml-2 text-black 2xl:text-4xl  dark:text-white text-opacity-70">
               Currently at{" "}
-              <span className="font-popM">KCL</span>
+              <span className="font-popM">King College London</span>
             </h1>
           </div>
         </div>
       </div>
       <div className="w-full h-fit  py-1 px-1 flex flex-col">
-        <h1 className="md:text-sm text-base font-popL ml-1 mb-5 text-black 2xl:text-4xl  dark:text-white">
+        <h1 className="text-sm font-popL ml-1 mb-5 text-black 2xl:text-4xl  dark:text-white">
           Hey, I’m Ali. I’m a <span className="font-popM">backend</span> and{" "}
           <span className="font-popM">frontend</span> developer specialising in
           backend development using the latest programming languages.
         </h1>
-        <h1 className="md:text-sm text-lg font-popM ml-1 mb-4 text-black 2xl:text-4xl dark:text-white">
+        <h1 className="text-sm font-popM ml-1 mb-4 text-black 2xl:text-4xl dark:text-white">
           Skills.
         </h1>
         <SkillList />

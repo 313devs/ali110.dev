@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 export default function Pending() {
   return (
-    <div className="flex flex-col w-screen md:w-full h-96 justify-center items-center">
+    <div className="flex flex-col md:w-full h-96 justify-center items-center">
       <motion.div
         initial={{
           opacity: 0,
@@ -32,7 +32,7 @@ export default function Pending() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="rounded-lg h-10 w-fit px-4 py-6 hover:bg-neutral-100 hover:dark:bg-neutral-800 flex items-center justify-center md:text-sm text-lg font-popL hover:dark:text-white border-2  border-neutral-100 dark:border-neutral-800">
+            <button className="rounded-lg h-10 w-fit px-4 py-6 hover:bg-neutral-100 hover:dark:bg-neutral-800 flex items-center justify-center text-sm font-popL hover:dark:text-white border-2  border-neutral-100 dark:border-neutral-800">
               <LinkedInLogoIcon className="mr-2" />
               Linkedin
             </button>
@@ -42,7 +42,7 @@ export default function Pending() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="rounded-lg h-10 w-fit px-4 py-6 ml-4 hover:bg-neutral-100 hover:dark:bg-neutral-800 flex items-center justify-center md:text-sm text-lg font-popL hover:dark:text-white border-2 border-neutral-100 dark:border-neutral-800">
+            <button className="rounded-lg h-10 w-fit px-4 py-6 ml-4 hover:bg-neutral-100 hover:dark:bg-neutral-800 flex items-center justify-center text-sm font-popL hover:dark:text-white border-2 border-neutral-100 dark:border-neutral-800">
               <GitHubLogoIcon className="mr-2" />
               Github
             </button>
