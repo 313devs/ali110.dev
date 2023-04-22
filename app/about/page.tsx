@@ -5,7 +5,8 @@ import { GitHubLogoIcon, CodeIcon } from '@radix-ui/react-icons';
 export default function about() {
   return (
     <div className="flex flex-col w-full h-fit px-5 md:h-fill md:mt-1 md:ml-5">
-      <div className={"w-full h-12 mb-2  2xl:h-24"}>
+      <div className={"w-full h-12 mb-2  2xl:h-24 flex flex-row justify-between"}>
+        <h1 className="text-5xl 2xl:text-8xl font-sac">about me.</h1>
         <h1 className="text-5xl 2xl:text-8xl font-sac">about me.</h1>
       </div>
       <h1 className="text-base font-popM mt-4">Hey, I&apos;m Ali...</h1>
