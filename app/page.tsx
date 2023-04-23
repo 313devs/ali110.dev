@@ -4,9 +4,33 @@ import Image from 'next/image'
 import { IdCardIcon, RocketIcon, MixIcon, LinkedInLogoIcon, GitHubLogoIcon} from '@radix-ui/react-icons'
 import SkillList from '@/components/skills';
 import { motion } from 'framer-motion';
+import { Sacramento, Poppins} from 'next/font/google'
+
+const sacramento = Sacramento({ 
+  weight: '400', 
+  style: 'normal',
+  subsets : ["latin"],
+  variable:"--font-sac",
+  display: "swap"
+})
+const poppinsLight = Poppins({
+  weight: "200",
+  style: "normal",
+  subsets: ["latin"],
+  variable: "--font-pop-light",
+})
+
+const poppinsMedium = Poppins({
+weight: '500',
+style: 'normal',
+subsets : ["latin"],
+variable:"--font-pop-medium"
+})
 
 
 export default function Home() {
+
+
   return (
     <div className="flex flex-col md:w-5/6 h-fit px-5 md:h-full md:mt-1 md:ml-5">
       <div className={"w-full h-12 mb-2  2xl:h-24"}>

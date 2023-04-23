@@ -4,6 +4,27 @@ import { usePathname } from 'next/navigation';
 import clsx from 'clsx';
 import Link from 'next/link';
 import { motion, LayoutGroup } from 'framer-motion';
+import { Sacramento, Poppins} from 'next/font/google'
+
+const sacramento = Sacramento({ 
+  weight: '400', 
+  style: 'normal',
+  subsets : ["latin"],
+  variable:"--font-sac" 
+})
+const poppinsLight = Poppins({
+  weight: "200",
+  style: "normal",
+  subsets: ["latin"],
+  variable: "--font-pop-light",
+})
+
+const poppinsMedium = Poppins({
+weight: '500',
+style: 'normal',
+subsets : ["latin"],
+variable:"--font-pop-medium"
+})
 
 const navItems = {
   "/": {
