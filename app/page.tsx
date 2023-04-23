@@ -52,7 +52,18 @@ export default function Home() {
         </motion.h1>
       </div>
       <div className="w-full h-fit  py-1 px-1 flex flex-col justify-start md:flex-row md:items-start">
-        <div className="w-28 h-28 rounded-full mr-3 mb-4 md:mb-4 overflow-hidden flex justify-center items-center 2xl:w-64 2xl:h-64">
+        <motion.div 
+        initial={{
+          opacity: 0.2
+        }}
+        animate={{
+          opacity: 1
+        }}
+        transition={{
+          duration: 0.6,
+          type: "tween",
+        }}
+        className="w-28 h-28 rounded-full mr-3 mb-4 md:mb-4 overflow-hidden flex justify-center items-center 2xl:w-64 2xl:h-64">
           <Image
             src={"/profilepic.jpg"}
             alt="profile"
@@ -60,7 +71,7 @@ export default function Home() {
             height={500}
             className="w-full h-full object-cover"
           />
-        </div>
+        </motion.div>
         <div className="flex flex-col justify-between mb-2 w-fit h-28 px-1 2xl:w-fit 2xl:h-64">
           <div className="w-full h-1/3 flex items-center">
             <MixIcon className="text-black dark:text-white text-opacity-70" />
