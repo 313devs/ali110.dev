@@ -48,7 +48,7 @@ export default function Home() {
           }}
           className="text-5xl 2xl:text-8xl font-sac"
         >
-          ali kheirkhah
+          Omzy
         </motion.h1>
       </div>
       <div className="w-full h-fit  py-1 px-1 flex flex-col justify-start md:flex-row md:items-start">
@@ -77,7 +77,7 @@ export default function Home() {
             <MixIcon className="text-black dark:text-white text-opacity-70" />
             <h1 className="text-sm font-popL ml-2 text-black 2xl:text-4xl  dark:text-white text-opacity-70">
               {" "}
-              <span className="font-popM">20</span> y.o
+              <span className="font-popM">21</span> y.o
             </h1>
           </div>
           <div className="w-full h-1/3 flex items-center">
