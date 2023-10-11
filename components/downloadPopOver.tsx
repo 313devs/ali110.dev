@@ -1,9 +1,13 @@
-"use client"
+"use client";
 
-import React from 'react'
-import Image from 'next/image'
-import * as Popover from '@radix-ui/react-popover';
-import { MixerHorizontalIcon, Cross2Icon, DownloadIcon } from '@radix-ui/react-icons';
+import React from "react";
+import Image from "next/image";
+import * as Popover from "@radix-ui/react-popover";
+import {
+  MixerHorizontalIcon,
+  Cross2Icon,
+  DownloadIcon,
+} from "@radix-ui/react-icons";
 
 export default function DownloadButton() {
   return (
@@ -43,7 +47,7 @@ export default function DownloadButton() {
               <DownloadIcon className="ml-2" />
             </button>
           </a>
-          <Popover.Arrow className="fill-white" />
+          <Popover.Arrow className="fill-[#111010]" />
         </Popover.Content>
       </Popover.Portal>
     </Popover.Root>

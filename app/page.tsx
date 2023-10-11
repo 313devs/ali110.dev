@@ -1,36 +1,39 @@
-"use client"
+"use client";
 
-import Image from 'next/image'
-import { IdCardIcon, RocketIcon, MixIcon, LinkedInLogoIcon, GitHubLogoIcon} from '@radix-ui/react-icons'
-import SkillList from '@/components/skills';
-import { motion } from 'framer-motion';
-import { Sacramento, Poppins} from 'next/font/google'
+import Image from "next/image";
+import {
+  IdCardIcon,
+  RocketIcon,
+  MixIcon,
+  LinkedInLogoIcon,
+  GitHubLogoIcon,
+} from "@radix-ui/react-icons";
+import SkillList from "@/components/skills";
+import { motion } from "framer-motion";
+import { Sacramento, Poppins } from "next/font/google";
 
-const sacramento = Sacramento({ 
-  weight: '400', 
-  style: 'normal',
-  subsets : ["latin"],
-  variable:"--font-sac",
-  display: "swap"
-})
+const sacramento = Sacramento({
+  weight: "400",
+  style: "normal",
+  subsets: ["latin"],
+  variable: "--font-sac",
+  display: "swap",
+});
 const poppinsLight = Poppins({
   weight: "200",
   style: "normal",
   subsets: ["latin"],
   variable: "--font-pop-light",
-})
+});
 
 const poppinsMedium = Poppins({
-weight: '500',
-style: 'normal',
-subsets : ["latin"],
-variable:"--font-pop-medium"
-})
-
+  weight: "500",
+  style: "normal",
+  subsets: ["latin"],
+  variable: "--font-pop-medium",
+});
 
 export default function Home() {
-
-
   return (
     <div className="flex flex-col md:w-5/6 h-fit px-5 md:h-full md:mt-1 md:ml-5">
       <div className={"w-full h-12 mb-2  2xl:h-24"}>
@@ -52,18 +55,19 @@ export default function Home() {
         </motion.h1>
       </div>
       <div className="w-full h-fit  py-1 px-1 flex flex-col justify-start md:flex-row md:items-start">
-        <motion.div 
-        initial={{
-          opacity: 0.2
-        }}
-        animate={{
-          opacity: 1
-        }}
-        transition={{
-          duration: 0.6,
-          type: "tween",
-        }}
-        className="w-28 h-28 rounded-full mr-3 mb-4 md:mb-4 overflow-hidden flex justify-center items-center 2xl:w-64 2xl:h-64">
+        <motion.div
+          initial={{
+            opacity: 0.2,
+          }}
+          animate={{
+            opacity: 1,
+          }}
+          transition={{
+            duration: 0.6,
+            type: "tween",
+          }}
+          className="w-28 h-28 rounded-full mr-3 mb-4 md:mb-4 overflow-hidden flex justify-center items-center 2xl:w-64 2xl:h-64"
+        >
           <Image
             src={"/profilepic.jpg"}
             alt="profile"
@@ -90,8 +94,7 @@ export default function Home() {
           <div className="w-full h-1/3  flex items-center">
             <IdCardIcon className="text-black dark:text-white text-opacity-70" />
             <h1 className="text-sm font-popL ml-2 text-black 2xl:text-4xl  dark:text-white text-opacity-70">
-              Currently at{" "}
-              <span className="font-popM">King College London</span>
+              Currently at <span className="font-popM">City, UoL</span>
             </h1>
           </div>
         </div>
