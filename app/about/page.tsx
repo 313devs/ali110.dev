@@ -11,44 +11,13 @@ export default function about() {
         <DownloadButton/>
       </div>
       <h1 className="text-base font-popM mt-4">Hey, I&apos;m Ali...</h1>
-      <p className="mb-5 font-popL">
-        I have been programming since I was{" "}
-        <span className="font-popM">13</span>. I started with{" "}
-        <span className="font-popM">C++</span> then moved to{" "}
-        <span className="font-popM">C# </span>
-        and finally started programming in <span className="font-popM">C</span>.
-        I used these programming languages for school&apos;s
-        <span className="font-popM"> robotic</span> competitions. <br /> Me and
-        my team went to <span className="font-popM">Germany Robocup2016</span>{" "}
-        and <span className="font-popM">Japan Robocup2017</span> in which we
-        gained different awards.
+      <p className="mb-5 mt-2 font-popL">
+        I have been focusing a lot more on backend in the past few years and my focus has been on <span className="font-popM">Rest API&apos;s</span> and 
+        mastering working with <span className="font-popM">microservices</span> and for that reason I have been using different up to date industry 
+        languages and frameworks such as <span className="font-popM"> Node.js </span>, <span className="font-popM"> Flask </span> and <span className="font-popM"> Golang </span>.
       </p>
       <h1 className="text-sm font-popL hover:cursor-none hover:bg-neutral-200 bg-neutral-100 hover:dark:bg-neutral-900 dark:bg-neutral-800 w-fit h-fit rounded-lg py-2 px-4 mb-5">
-        2016 - 2018
-      </h1>
-      <p className="mb-5 font-popL">
-        Meanwhile I was part of a team in which we designed and developed an IOS
-        game using <span className="font-popM"> Swift </span> and
-        <span className="font-popM"> SpriteKit </span>. We published the game to
-        the apple Appstore and it was live for
-        <span className="font-popM"> 1 year </span>.
-      </p>
-      <h1 className="text-sm font-popL hover:cursor-none hover:bg-neutral-200 bg-neutral-100 hover:dark:bg-neutral-900 dark:bg-neutral-800 w-fit h-fit rounded-lg py-2 px-4 mb-5">
-        2017 - 2018
-      </h1>
-      <p className="mb-5 font-popL">
-        In july of<span className="font-popM"> 2018 </span> I got a scholarship
-        from
-        <span className="font-popM"> Apple </span> to attend the
-        <span className="font-popM"> WWDC18 </span> developers confrence. the
-        languages and frameworks I used for this challenge were{" "}
-        <span className="font-popM"> Swift </span> ,
-        <span className="font-popM"> UIKit </span> ,
-        <span className="font-popM"> ARKit </span> and
-        <span className="font-popM"> SpriteKit </span>.
-      </p>
-      <h1 className="text-sm font-popL hover:cursor-none hover:bg-neutral-200 bg-neutral-100 hover:dark:bg-neutral-900 dark:bg-neutral-800 w-fit h-fit rounded-lg py-2 px-4 mb-5">
-        2018
+        2020 - Now
       </h1>
       <p className="mb-5 font-popL">
         In these past years I have been focused on{" "}
@@ -76,12 +45,43 @@ export default function about() {
         2019 - 2022
       </h1>
       <p className="mb-5 font-popL">
-        I have been focusing a lot more on backend in the past few years and my focus has been on <span className="font-popM">Rest API&apos;s</span> and 
-        mastering working with <span className="font-popM">microservices</span> and for that reason I have been using different up to date industry 
-        languages and frameworks such as <span className="font-popM"> Node.js </span>, <span className="font-popM"> Flask </span> and <span className="font-popM"> Golang </span>.
+        In july of<span className="font-popM"> 2018 </span> I got a scholarship
+        from
+        <span className="font-popM"> Apple </span> to attend the
+        <span className="font-popM"> WWDC18 </span> developers confrence. the
+        languages and frameworks I used for this challenge were{" "}
+        <span className="font-popM"> Swift </span> ,
+        <span className="font-popM"> UIKit </span> ,
+        <span className="font-popM"> ARKit </span> and
+        <span className="font-popM"> SpriteKit </span>.
       </p>
       <h1 className="text-sm font-popL hover:cursor-none hover:bg-neutral-200 bg-neutral-100 hover:dark:bg-neutral-900 dark:bg-neutral-800 w-fit h-fit rounded-lg py-2 px-4 mb-5">
-        2020 - Now
+        2018
+      </h1>
+      <p className="mb-5 font-popL">
+        Meanwhile I was part of a team in which we designed and developed an IOS
+        game using <span className="font-popM"> Swift </span> and
+        <span className="font-popM"> SpriteKit </span>. We published the game to
+        the apple Appstore and it was live for
+        <span className="font-popM"> 1 year </span>.
+      </p>
+      <h1 className="text-sm font-popL hover:cursor-none hover:bg-neutral-200 bg-neutral-100 hover:dark:bg-neutral-900 dark:bg-neutral-800 w-fit h-fit rounded-lg py-2 px-4 mb-5">
+        2017 - 2018
+      </h1>
+      <p className="mb-5 font-popL">
+        I have been programming since I was{" "}
+        <span className="font-popM">13</span>. I started with{" "}
+        <span className="font-popM">C++</span> then moved to{" "}
+        <span className="font-popM">C# </span>
+        and finally started programming in <span className="font-popM">C</span>.
+        I used these programming languages for school&apos;s
+        <span className="font-popM"> robotic</span> competitions. <br /> Me and
+        my team went to <span className="font-popM">Germany Robocup2016</span>{" "}
+        and <span className="font-popM">Japan Robocup2017</span> in which we
+        gained different awards.
+      </p>
+      <h1 className="text-sm font-popL hover:cursor-none hover:bg-neutral-200 bg-neutral-100 hover:dark:bg-neutral-900 dark:bg-neutral-800 w-fit h-fit rounded-lg py-2 px-4 mb-5">
+        2016 - 2018
       </h1>
       <hr />
       <div className='flex w-full h-fit justify-between pt-5'>
