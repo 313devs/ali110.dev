@@ -81,7 +81,7 @@ export default function Home() {
             <MixIcon className="text-black dark:text-white text-opacity-70" />
             <h1 className="text-sm font-popL ml-2 text-black 2xl:text-4xl  dark:text-white text-opacity-70">
               {" "}
-              <span className="font-popM">20</span> y.o
+              <span className="font-popM">21</span> y.o
             </h1>
           </div>
           <div className="w-full h-1/3 flex items-center">
@@ -94,7 +94,7 @@ export default function Home() {
           <div className="w-full h-1/3  flex items-center">
             <IdCardIcon className="text-black dark:text-white text-opacity-70" />
             <h1 className="text-sm font-popL ml-2 text-black 2xl:text-4xl  dark:text-white text-opacity-70">
-              Currently at <span className="font-popM">City, UoL</span>
+              <span className="font-popM">City, University of London</span>
             </h1>
           </div>
         </div>
