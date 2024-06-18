@@ -35,7 +35,7 @@ const poppinsMedium = Poppins({
 
 export default function Home() {
   return (
-    <div className="flex flex-col md:w-5/6 h-fit px-5 md:h-full md:mt-1 md:ml-5">
+    <div className="flex flex-col px-5 md:w-5/6 h-fit md:h-full md:mt-1 md:ml-5">
       <div className={"w-full h-12 mb-2  2xl:h-24"}>
         <motion.h1
           initial={{
@@ -54,7 +54,7 @@ export default function Home() {
           ali kheirkhah
         </motion.h1>
       </div>
-      <div className="w-full h-fit  py-1 px-1 flex flex-col justify-start md:flex-row md:items-start">
+      <div className="flex flex-col justify-start w-full px-1 py-1 h-fit md:flex-row md:items-start">
         <motion.div
           initial={{
             opacity: 0.2,
@@ -66,56 +66,56 @@ export default function Home() {
             duration: 0.6,
             type: "tween",
           }}
-          className="w-28 h-28 rounded-full mr-3 mb-4 md:mb-4 overflow-hidden flex justify-center items-center 2xl:w-64 2xl:h-64"
+          className="flex items-center justify-center mb-4 mr-3 overflow-hidden rounded-full w-28 h-28 md:mb-4 2xl:w-64 2xl:h-64"
         >
           <Image
             src={"/profilepic.jpg"}
             alt="profile"
             width={500}
             height={500}
-            className="w-full h-full object-cover"
+            className="object-cover w-full h-full"
           />
         </motion.div>
-        <div className="flex flex-col justify-between mb-2 w-fit h-28 px-1 2xl:w-fit 2xl:h-64">
-          <div className="w-full h-1/3 flex items-center">
+        <div className="flex flex-col justify-between px-1 mb-2 w-fit h-28 2xl:w-fit 2xl:h-64">
+          <div className="flex items-center w-full h-1/3">
             <MixIcon className="text-black dark:text-white text-opacity-70" />
-            <h1 className="text-sm font-popL ml-2 text-black 2xl:text-4xl  dark:text-white text-opacity-70">
+            <h1 className="ml-2 text-sm text-black font-popL 2xl:text-4xl dark:text-white text-opacity-70">
               {" "}
               <span className="font-popM">21</span> y.o
             </h1>
           </div>
-          <div className="w-full h-1/3 flex items-center">
+          <div className="flex items-center w-full h-1/3">
             <RocketIcon className="text-black dark:text-white text-opacity-70" />
-            <h1 className="text-sm font-popL ml-2 text-black 2xl:text-4xl  dark:text-white text-opacity-70">
+            <h1 className="ml-2 text-sm text-black font-popL 2xl:text-4xl dark:text-white text-opacity-70">
               {" "}
-              <span className="font-popM">7</span> years of experience
+              <span className="font-popM">3</span> years of experience
             </h1>
           </div>
-          <div className="w-full h-1/3  flex items-center">
+          <div className="flex items-center w-full h-1/3">
             <IdCardIcon className="text-black dark:text-white text-opacity-70" />
-            <h1 className="text-sm font-popL ml-2 text-black 2xl:text-4xl  dark:text-white text-opacity-70">
+            <h1 className="ml-2 text-sm text-black font-popL 2xl:text-4xl dark:text-white text-opacity-70">
               <span className="font-popM">City, University of London</span>
             </h1>
           </div>
         </div>
       </div>
-      <div className="w-full h-fit  py-1 px-1 flex flex-col">
-        <h1 className="text-sm font-popL ml-1 mb-5 text-black 2xl:text-4xl  dark:text-white">
+      <div className="flex flex-col w-full px-1 py-1 h-fit">
+        <h1 className="mb-5 ml-1 text-sm text-black font-popL 2xl:text-4xl dark:text-white">
           Hey, I’m Ali. I’m a <span className="font-popM">backend</span> and{" "}
           <span className="font-popM">frontend</span> developer specialising in
           backend development using the latest programming languages.
         </h1>
-        <h1 className="text-sm font-popM ml-1 mb-4 text-black 2xl:text-4xl dark:text-white">
+        <h1 className="mb-4 ml-1 text-sm text-black font-popM 2xl:text-4xl dark:text-white">
           Skills.
         </h1>
         <SkillList />
-        <div className="w-full h-fit flex flex-row justify-start mt-5">
+        <div className="flex flex-row justify-start w-full mt-5 h-fit">
           <a
             href="https://www.linkedin.com/in/ali110kh"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="rounded-lg h-10 w-fit px-4 py-6 hover:bg-neutral-100 hover:dark:bg-neutral-800 flex items-center justify-center md:text-sm text-lg font-popL hover:dark:text-white border-2  border-neutral-100 dark:border-neutral-800">
+            <button className="flex items-center justify-center h-10 px-4 py-6 text-lg border-2 rounded-lg w-fit hover:bg-neutral-100 hover:dark:bg-neutral-800 md:text-sm font-popL hover:dark:text-white border-neutral-100 dark:border-neutral-800">
               <LinkedInLogoIcon className="mr-2" />
               Linkedin
             </button>
@@ -125,7 +125,7 @@ export default function Home() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="rounded-lg h-10 w-fit px-4 py-6 ml-4 hover:bg-neutral-100 hover:dark:bg-neutral-800 flex items-center justify-center md:text-sm text-lg font-popL hover:dark:text-white border-2 border-neutral-100 dark:border-neutral-800">
+            <button className="flex items-center justify-center h-10 px-4 py-6 ml-4 text-lg border-2 rounded-lg w-fit hover:bg-neutral-100 hover:dark:bg-neutral-800 md:text-sm font-popL hover:dark:text-white border-neutral-100 dark:border-neutral-800">
               <GitHubLogoIcon className="mr-2" />
               Github
             </button>
