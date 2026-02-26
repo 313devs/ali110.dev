@@ -1,63 +1,63 @@
-
-import Navbar from '@/components/navbar'
+import type { Metadata, Viewport } from 'next'
+import { Geist, Geist_Mono } from 'next/font/google'
 import './globals.css'
-import { Sacramento, Poppins} from 'next/font/google'
+import { Header } from './header'
+import { Footer } from './footer'
+import { ThemeProvider } from 'next-themes'
 
-export const metadata = {
-  title: '110',
-  icons: {
-    shortcut: '/favicon.ico',
-  },
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  themeColor: '#ffffff',
 }
 
-const sacramento = Sacramento({ 
-  weight: '400', 
-  style: 'normal',
-  subsets : ["latin"],
-  variable:"--font-sac",
-  display:"block"
+export const metadata: Metadata = {
+  metadataBase: new URL('https://nim-fawn.vercel.app/'),
+  alternates: {
+    canonical: '/'
+  },
+  title: {
+    default: 'Nim - Personal website template',
+    template: '%s | Nim'
+  },
+  description:  'Nim is a free and open-source personal website template built with Next.js 15, React 19 and Motion-Primitives.',
+};
 
+const geist = Geist({
+  variable: '--font-geist',
+  subsets: ['latin'],
 })
-const poppinsLight = Poppins({
-  weight: "200",
-  style: "normal",
-  subsets: ["latin"],
-  variable: "--font-pop-light",
-  display:"block"
-});
 
-const poppinsMedium = Poppins({
-weight: '500',
-style: 'normal',
-subsets : ["latin"],
-variable:"--font-pop-medium",
-display:"block"
+const geistMono = Geist_Mono({
+  variable: '--font-geist-mono',
+  subsets: ['latin'],
 })
 
 export default function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode
-}) {
-
-
-  const fontClasses = `${sacramento.variable} ${poppinsLight.variable} ${poppinsMedium.variable}`;
-
+}>) {
   return (
-    <html
-      lang="en"
-      className={"text-black bg-white dark:text-white dark:bg-[#111010]"}
-    >
+    <html lang="en" suppressHydrationWarning>
       <body
-        className={`max-w-4xl mb-40 flex flex-col md:flex-row mx-4 mt-8 md:mt-20 lg:mt-32 lg:mx-auto bg-transparent ${fontClasses}`}
+        className={`${geist.variable} ${geistMono.variable} bg-white tracking-tight antialiased dark:bg-zinc-950`}
       >
-        <Navbar />
-        <main className={`min-w-0 md:mt-0 flex flex-col px-2 md:px-0 h-full md:w-full bg-white dark:bg-[#111010]`}>
-          {children}
-        </main>
+        <ThemeProvider
+          enableSystem={true}
+          attribute="class"
+          storageKey="theme"
+          defaultTheme="system"
+        >
+          <div className="flex min-h-screen w-full flex-col font-[family-name:var(--font-inter-tight)]">
+            <div className="relative mx-auto w-full max-w-screen-sm flex-1 px-4 pt-20">
+              <Header />
+              {children}
+              <Footer />
+            </div>
+          </div>
+        </ThemeProvider>
       </body>
     </html>
-  );
+  )
 }
-
-

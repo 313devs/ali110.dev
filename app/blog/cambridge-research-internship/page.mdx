@@ -1,0 +1,236 @@
+export const metadata = {
+  title: 'What I Built During My Research Internship at the University of Cambridge X Google DeepMind',
+  description:
+    'A deep dive into my research internship at Cambridge, powered by Google DeepMind, where I worked on the Pico-LM dashboard using Next.js and contributed to the pico-report library.',
+  alternates: {
+    canonical: '/blog/cambridge-research-internship',
+  },
+};
+
+<Cover
+  src="https://images.unsplash.com/photo-1623632306901-e509641e7191?q=80&w=2340&auto=format&fit=crop"
+  alt="University of Cambridge architecture"
+  caption="University of Cambridge"
+/>
+
+# What I Built During My Research Internship at the University of Cambridge X Google DeepMind
+
+This summer, I had the opportunity to work as a research intern at the University of Cambridge on a programme powered by Google DeepMind. The focus was not simply theoretical AI research, but building real tooling around language models — infrastructure that makes research measurable, reproducible and visual.
+
+This internship was genuinely one of the best experiences I have ever had. It pushed me technically, strengthened my research foundations, and reshaped how I think about AI systems.
+
+My work centred around **Pico-LM**, an open initiative exploring small, transparent language models — and more specifically, building the ecosystem around it.
+
+---
+
+## Supervision & Mentorship
+
+I was supervised by **Richard Diehl Martinez**, Research Fellow in Computer Science at the University of Cambridge and founder of Pico.
+
+Richard played a massive role in shaping my understanding of:
+- Natural Language Processing  
+- Large Language Models  
+- Research methodology  
+- Evaluation and reproducibility  
+
+Beyond technical guidance, he helped me develop a deeper intuition for how language models learn, how experiments should be structured, and why transparency matters in research. The mentorship was rigorous but incredibly supportive — and it elevated my thinking far beyond implementation alone.
+
+---
+
+## The Vision Behind Pico-LM
+
+[PicoLM.io](https://picolm.io) is built around a simple but powerful principle:
+
+> Language model research should be transparent, measurable and accessible.
+
+Rather than treating models as black boxes, Pico-LM emphasises:
+
+- Reproducibility  
+- Clear training metrics  
+- Open evaluation pipelines  
+- Lightweight experimentation  
+
+Instead of scaling blindly, the philosophy is precision over brute force.
+
+---
+
+## Building the Pico-LM Dashboard (Next.js)
+
+My primary responsibility was working on the **Pico-LM Dashboard**, built using **Next.js**.
+
+The goal of the dashboard was to make model training and evaluation interpretable at a glance. Research is only useful if you can clearly see what is happening.
+
+### What I Worked On
+
+- Architecting the frontend using **Next.js (App Router)**
+- Designing clean visualisations for:
+  - Training loss curves  
+  - Evaluation benchmarks  
+  - Dataset statistics  
+- Implementing modular experiment tracking components  
+- Optimising performance for large metric payloads  
+- Ensuring a clean separation between research data and UI logic  
+
+The stack emphasised:
+
+- **Next.js**
+- Type-safe APIs  
+- Modular component architecture  
+- Clean UI patterns inspired by research tooling rather than marketing dashboards  
+
+The dashboard became a central interface for:
+
+- Monitoring model runs  
+- Comparing experiments  
+- Generating structured reports  
+- Debugging training behaviour  
+
+In research, clarity beats complexity. That principle guided every design decision.
+
+---
+
+## Contributing to `pico-report`
+
+Alongside the dashboard, I worked on the open-source library:
+
+👉 https://github.com/pico-lm/pico-report/
+
+Initially, **pico-report** was created to generate structured experiment data specifically for the Pico-LM dashboard — acting as the reporting layer that fed consistent, reproducible metrics into the visual interface.
+
+However, as the tooling matured, it became clear that the abstraction was useful beyond the internal dashboard. It was then open-sourced so that anyone could use it to structure experiments, generate evaluation outputs, and produce transparent reports.
+
+`pico-report` is designed to:
+
+- Structure experiment outputs  
+- Standardise evaluation metrics  
+- Generate reproducible reports  
+- Make benchmarking transparent  
+
+### Why This Matters
+
+One of the biggest issues in AI research is inconsistent reporting. Results often depend on hidden configurations, dataset variations or undocumented adjustments.
+
+`pico-report` addresses this by:
+
+- Defining structured output formats  
+- Making experiment metadata explicit  
+- Creating reproducible evaluation artefacts  
+
+Instead of:
+> “Trust us, it works.”
+
+The standard becomes:
+> “Here is the exact experiment, configuration and output.”
+
+Working on this library required thinking not just as a frontend engineer, but as someone designing research infrastructure.
+
+---
+
+## Engineering Challenges
+
+### 1. Handling Large Metric Streams
+
+Training logs scale quickly. Rendering them naïvely leads to performance issues.
+
+Solutions included:
+
+- Client-side data chunking  
+- Memoised visual components  
+- Efficient state management patterns  
+
+### 2. Designing for Researchers
+
+Researchers do not want:
+
+- Overly stylised dashboards  
+- Marketing-heavy design  
+- Distracting UI  
+
+They want:
+
+- Raw data clarity  
+- Accurate comparisons  
+- Fast iteration  
+
+Designing for this audience required discipline and restraint.
+
+### 3. Reproducibility as a First-Class Citizen
+
+Every interface decision had to support:
+
+- Transparency  
+- Auditability  
+- Replicability  
+
+The UI was not decoration — it was part of the scientific workflow.
+
+---
+
+## What I Learned
+
+### AI Infrastructure > AI Hype
+
+The most impactful work often lies not in scaling models, but in building:
+
+- Evaluation pipelines  
+- Data handling systems  
+- Reporting frameworks  
+- Developer tooling  
+
+Without infrastructure, models are noise.
+
+### Systems Thinking in Research
+
+This internship reinforced that research engineering is systems engineering.
+
+Training, logging, reporting and visualisation must integrate cleanly. Each layer influences the others.
+
+### Mentorship Accelerates Mastery
+
+Working under Richard’s supervision accelerated my understanding of NLP and LLMs in a way that self-study alone could not. Exposure to research-grade thinking changed how I approach experimentation and evaluation.
+
+---
+
+## The Bigger Picture
+
+Being immersed in a Cambridge research environment powered by Google DeepMind meant operating in a culture of:
+
+- Rigorous thinking  
+- High standards  
+- Open intellectual debate  
+- Deep curiosity  
+
+It pushed me beyond product engineering and into research-oriented systems design.
+
+---
+
+## Final Reflection
+
+This internship was not about building flashy AI demos.
+
+It was about building:
+
+- Tools that make research measurable  
+- Interfaces that make models interpretable  
+- Libraries that enforce reproducibility  
+
+From architecting the **Next.js Pico-LM dashboard** to contributing to and open-sourcing **pico-report**, the work focused on making AI research more structured and transparent.
+
+It remains one of the most formative and rewarding technical experiences I have had — and it fundamentally shaped how I think about responsible AI development.
+
+---
+
+### Explore
+
+- 🌐 Pico-LM Website: https://picolm.io  
+- 📦 pico-report: https://github.com/pico-lm/pico-report/  
+
+---
+
+### Questions I’m Thinking About
+
+- How can research tooling become as polished as consumer software?
+- Can reproducibility become the default rather than an afterthought?
+- What does responsible AI infrastructure look like at scale?
+
+The answers likely lie in better systems — not just bigger models.
