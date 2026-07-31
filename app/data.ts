@@ -51,7 +51,7 @@ export const PROJECTS: Project[] = [
 export const WORK_EXPERIENCE: WorkExperience[] = [
   {
     company: 'ProteSyn',
-    title: 'Co-Founder & Software Engineer',
+    title: 'Co-Founder & Founding Engineer',
     start: 'Sep 2025',
     end: 'Present',
     link: 'https://protesyn.studio',
@@ -59,7 +59,7 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
   },
   {
     company: 'Cambridge University x Google Deepmind',
-    title: 'AI Research Intern@Pico-LM',
+    title: 'AI Research Intern @Pico-LM',
     start: 'Jun 2025',
     end: 'Sep 2025',
     link: 'https://picolm.io',
@@ -77,7 +77,7 @@ export const WORK_EXPERIENCE: WorkExperience[] = [
     company: 'Lancy',
     title: 'Software Engineer',
     start: 'Aug 2023',
-    end: 'Present',
+    end: 'Aug 2025',
     link: 'https://lan.cy',
     id: 'work3',
   },
@@ -109,8 +109,8 @@ export const SOCIAL_LINKS: SocialLink[] = [
   },
   {
     label: 'Resume',
-    link: '/resume.pdf',
+    link: '/Resume.pdf',
   },
 ]
 
-export const EMAIL = 'developerkh313@gmail.com'
+export const EMAIL = 'akheirkhah8191@gmail.com'
