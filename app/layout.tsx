@@ -15,14 +15,14 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL('https://ali110.dev'),
   alternates: {
-    canonical: '/'
+    canonical: '/',
   },
   title: {
     default: 'Ali - Software Developer',
-    template: '%s | Ali'
+    template: '%s | Ali',
   },
   description: 'Personal website of Ali — software developer',
-};
+}
 
 const geist = Geist({
   variable: '--font-geist',
@@ -41,6 +41,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html:
+              'window.traks=window.traks||function(){(window.traks.q=window.traks.q||[]).push(arguments)}',
+          }}
+        />
+        <script
+          defer
+          data-site="pb_live_tnts9vh7icpjxq4dbiqjykwy"
+          src="https://traks-collect.developerkh313.workers.dev/t.js"
+        />
+      </head>
       <body
         className={`${geist.variable} ${geistMono.variable} bg-white tracking-tight antialiased dark:bg-zinc-950`}
       >
